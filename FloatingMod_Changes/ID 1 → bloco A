@@ -1,59 +1,46 @@
-# ID 2 → Bloco B
+# ID 1 → Bloco A
 
 ## Identificação
 
 - Função analisada: `FloatingMod_Changes`
-- ID: `2`
-- Bloco: `B`
+- ID: `1`
+- Bloco de destino: `A`
 - Biblioteca: `libGoldVIP64.so`
-- Tipo: dispatch interno / bloco compartilhado
+- Tipo: dispatch interno
 
-## Mapa de compartilhamento
+## Mapa
 
-O bloco B também é alcançado pelos seguintes IDs:
-
-- ID 2
-- IDs 5–12
-- IDs 15–16
-- IDs 21–26
-
-## Observação técnica
-
-A análise estática da função `FloatingMod_Changes` indica que o ID 2
-direciona a execução para o mesmo bloco interno identificado como
-`bloco B`.
-
-Isso significa que vários IDs utilizam o mesmo trecho de código.
+`ID 1 → bloco A`
 
 ## Comportamento
 
 **Ainda não determinado com segurança.**
 
-A existência do bloco B confirma o fluxo de despacho, mas o ID do
-dispatcher, sozinho, não permite determinar qual funcionalidade de
-alto nível está associada ao bloco.
+A análise estática confirma que o ID 1 direciona a execução para o
+bloco interno identificado como `A`.
 
-Não atribuir ao bloco funções como moedas, recompensas, XP, missões
-ou outros comportamentos sem evidência adicional.
+O destino do dispatcher, isoladamente, não determina a funcionalidade
+de alto nível executada pelo bloco.
 
-## Evidências necessárias
+## Evidências a analisar
 
-Para determinar o comportamento do bloco B, devem ser analisados:
+Para identificar o comportamento do bloco A:
 
-1. chamadas realizadas pelo bloco;
-2. funções nativas chamadas;
-3. referências de strings;
-4. símbolos/importações relacionados;
-5. possíveis chamadas JNI;
-6. relação com métodos/classes do Unity/IL2CPP;
-7. fluxo de retorno e dados manipulados.
+1. instruções executadas;
+2. funções chamadas;
+3. argumentos utilizados;
+4. strings referenciadas;
+5. símbolos e importações;
+6. chamadas JNI;
+7. referências ao Unity/IL2CPP;
+8. dados manipulados;
+9. fluxo de retorno.
 
-## Classificação atual
+## Classificação
 
-**CONFIRMADO:** ID 2 → bloco B.
+**CONFIRMADO:** ID 1 → bloco A.
 
-**DESCONHECIDO:** comportamento funcional exato do bloco B.
+**DESCONHECIDO:** comportamento funcional exato do bloco A.
 
-**PROVÁVEL:** o mesmo comportamento estrutural é reutilizado pelos
-demais IDs que apontam para B, mas isso ainda deve ser confirmado
-individualmente.
+**PENDENTE:** análise detalhada das instruções e chamadas realizadas
+pelo bloco.
