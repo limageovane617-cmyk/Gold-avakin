@@ -1,1 +1,47 @@
 
+# ID 17 → Bloco G
+
+## Identificação
+
+- Função analisada: `FloatingMod_Changes`
+- ID: `17`
+- Bloco de destino: `G`
+- Biblioteca: `libGoldVIP64.so`
+- Tipo: dispatch interno
+
+## Mapa
+
+`ID 17 → bloco G`
+
+## Comportamento
+
+**Ainda não determinado com segurança.**
+
+A análise estática confirma que o ID 17 direciona a execução para o
+bloco interno identificado como `G`.
+
+O destino do dispatcher, por si só, não permite determinar qual
+funcionalidade de alto nível é executada.
+
+## Evidências a analisar
+
+Para identificar o comportamento do bloco G:
+
+1. instruções executadas;
+2. funções chamadas;
+3. argumentos utilizados;
+4. strings referenciadas;
+5. símbolos e importações;
+6. chamadas JNI;
+7. referências ao Unity/IL2CPP;
+8. dados manipulados;
+9. fluxo de retorno.
+
+## Classificação
+
+**CONFIRMADO:** ID 17 → bloco G.
+
+**DESCONHECIDO:** comportamento funcional exato do bloco G.
+
+**PENDENTE:** análise detalhada das instruções e chamadas realizadas
+pelo bloco.
