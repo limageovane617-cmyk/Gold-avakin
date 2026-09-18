@@ -1,1 +1,47 @@
 
+# ID 3 → Bloco C
+
+## Identificação
+
+- Função analisada: `FloatingMod_Changes`
+- ID: `3`
+- Bloco: `C`
+- Biblioteca: `libGoldVIP64.so`
+- Tipo: dispatch interno
+
+## Mapa
+
+O ID 3 direciona a execução para o bloco interno identificado
+como `bloco C`.
+
+## Comportamento
+
+**Ainda não determinado com segurança.**
+
+O mapa de despacho confirma a relação:
+
+`ID 3 → bloco C`
+
+Por enquanto, não é possível atribuir ao bloco uma funcionalidade
+específica somente com essa informação.
+
+## Evidências a analisar
+
+Para determinar a função real do bloco C:
+
+1. chamadas realizadas pelo bloco;
+2. funções nativas utilizadas;
+3. strings referenciadas;
+4. símbolos e importações;
+5. chamadas JNI;
+6. referências relacionadas ao Unity/IL2CPP;
+7. fluxo de entrada e saída;
+8. dados manipulados pelo bloco.
+
+## Classificação
+
+**CONFIRMADO:** ID 3 → bloco C.
+
+**DESCONHECIDO:** comportamento funcional exato do bloco C.
+
+**PENDENTE:** análise das instruções e das funções chamadas pelo bloco.
