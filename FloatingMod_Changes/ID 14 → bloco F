@@ -1,1 +1,50 @@
 
+# ID 14 → Bloco F
+
+## Identificação
+
+- Função analisada: `FloatingMod_Changes`
+- ID: `14`
+- Bloco de destino: `F`
+- Biblioteca: `libGoldVIP64.so`
+- Tipo: dispatch interno
+
+## Mapa
+
+O ID 14 direciona a execução para o bloco interno identificado
+como `bloco F`.
+
+## Comportamento
+
+**Ainda não determinado com segurança.**
+
+A análise atual confirma o fluxo:
+
+`ID 14 → bloco F`
+
+O destino dentro do dispatcher está identificado, mas a
+funcionalidade específica ainda precisa ser confirmada pela análise
+do código executado nesse bloco.
+
+## Evidências a analisar
+
+Para identificar o comportamento do bloco F:
+
+1. instruções executadas;
+2. funções chamadas;
+3. argumentos utilizados;
+4. strings referenciadas;
+5. símbolos e importações;
+6. chamadas JNI;
+7. referências ao Unity/IL2CPP;
+8. dados manipulados;
+9. fluxo de retorno.
+
+## Classificação
+
+**CONFIRMADO:** ID 14 → bloco F.
+
+**DESCONHECIDO:** comportamento funcional exato do bloco F.
+
+**PENDENTE:** análise detalhada das instruções e das chamadas
+realizadas pelo bloco.
