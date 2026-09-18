@@ -1,1 +1,61 @@
 
+# IDs 15–16 → Bloco B
+
+## Identificação
+
+- Função analisada: `FloatingMod_Changes`
+- IDs: `15, 16`
+- Bloco de destino: `B`
+- Biblioteca: `libGoldVIP64.so`
+- Tipo: dispatch compartilhado
+
+## Mapa
+
+| ID | Destino |
+|---|---|
+| 15 | Bloco B |
+| 16 | Bloco B |
+
+## Relação com outros IDs
+
+O bloco B também recebe:
+
+- ID 2
+- IDs 5–12
+- IDs 21–26
+
+Assim, vários IDs convergem para o mesmo bloco interno.
+
+## Comportamento
+
+**Ainda não determinado com segurança.**
+
+O que está confirmado é apenas o fluxo:
+
+`ID 15 → bloco B`  
+`ID 16 → bloco B`
+
+O compartilhamento do bloco não é suficiente para determinar a
+funcionalidade específica associada a cada ID.
+
+## Evidências a analisar
+
+- instruções executadas;
+- funções chamadas;
+- argumentos;
+- strings referenciadas;
+- símbolos/importações;
+- chamadas JNI;
+- referências ao Unity/IL2CPP;
+- dados manipulados;
+- fluxo de retorno.
+
+## Classificação
+
+**CONFIRMADO:** IDs 15–16 → bloco B.
+
+**CONFIRMADO:** bloco B é compartilhado por vários IDs.
+
+**DESCONHECIDO:** comportamento funcional exato.
+
+**PENDENTE:** análise detalhada do bloco B.
