@@ -1,1 +1,63 @@
+# IDs 21–26 → Bloco B
 
+## Identificação
+
+- Função analisada: `FloatingMod_Changes`
+- IDs: `21, 22, 23, 24, 25, 26`
+- Bloco de destino: `B`
+- Biblioteca: `libGoldVIP64.so`
+- Tipo: dispatch compartilhado
+
+## Mapa
+
+| ID | Destino |
+|---|---|
+| 21 | Bloco B |
+| 22 | Bloco B |
+| 23 | Bloco B |
+| 24 | Bloco B |
+| 25 | Bloco B |
+| 26 | Bloco B |
+
+## Relação com outros IDs
+
+O bloco B também recebe:
+
+- ID 2
+- IDs 5–12
+- IDs 15–16
+
+Com este grupo, todos os IDs atualmente mapeados para o bloco B
+ficam documentados.
+
+## Comportamento
+
+**Ainda não determinado com segurança.**
+
+A análise estática confirma a convergência dos IDs 21–26 para o
+bloco B.
+
+O compartilhamento do bloco não permite concluir, sozinho, qual
+funcionalidade cada ID representa.
+
+## Evidências a analisar
+
+- instruções executadas;
+- funções chamadas;
+- argumentos utilizados;
+- strings referenciadas;
+- símbolos e importações;
+- chamadas JNI;
+- referências ao Unity/IL2CPP;
+- dados manipulados;
+- fluxo de retorno.
+
+## Classificação
+
+**CONFIRMADO:** IDs 21–26 → bloco B.
+
+**CONFIRMADO:** o bloco B é compartilhado por múltiplos IDs.
+
+**DESCONHECIDO:** comportamento funcional exato do bloco B.
+
+**PENDENTE:** análise detalhada das instruções e chamadas do bloco.
