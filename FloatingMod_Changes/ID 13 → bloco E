@@ -1,1 +1,49 @@
+# ID 13 → Bloco E
 
+## Identificação
+
+- Função analisada: `FloatingMod_Changes`
+- ID: `13`
+- Bloco de destino: `E`
+- Biblioteca: `libGoldVIP64.so`
+- Tipo: dispatch interno
+
+## Mapa
+
+O ID 13 direciona a execução para o bloco interno identificado
+como `bloco E`.
+
+## Comportamento
+
+**Ainda não determinado com segurança.**
+
+A análise atual confirma o fluxo:
+
+`ID 13 → bloco E`
+
+O destino do dispatcher está identificado, mas a funcionalidade
+executada por esse bloco ainda precisa ser confirmada pela análise
+das instruções e das funções chamadas.
+
+## Evidências a analisar
+
+Para identificar o comportamento do bloco E:
+
+1. instruções executadas;
+2. funções chamadas;
+3. argumentos utilizados;
+4. strings referenciadas;
+5. símbolos e importações;
+6. chamadas JNI;
+7. referências ao Unity/IL2CPP;
+8. dados manipulados;
+9. fluxo de retorno.
+
+## Classificação
+
+**CONFIRMADO:** ID 13 → bloco E.
+
+**DESCONHECIDO:** comportamento funcional exato do bloco E.
+
+**PENDENTE:** análise detalhada das instruções e chamadas realizadas
+pelo bloco.
