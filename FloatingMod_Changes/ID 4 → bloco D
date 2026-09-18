@@ -1,1 +1,47 @@
+# ID 4 → Bloco D
 
+## Identificação
+
+- Função analisada: `FloatingMod_Changes`
+- ID: `4`
+- Bloco: `D`
+- Biblioteca: `libGoldVIP64.so`
+- Tipo: dispatch interno
+
+## Mapa
+
+O ID 4 direciona a execução para o bloco interno identificado
+como `bloco D`.
+
+## Comportamento
+
+**Ainda não determinado com segurança.**
+
+A análise atual confirma o caminho:
+
+`ID 4 → bloco D`
+
+Isso identifica o destino dentro do dispatcher, mas não determina
+sozinho a funcionalidade executada pelo bloco.
+
+## Evidências a analisar
+
+Para identificar o comportamento real do bloco D:
+
+1. instruções executadas pelo bloco;
+2. funções chamadas;
+3. símbolos e importações utilizados;
+4. strings referenciadas;
+5. chamadas JNI;
+6. referências ao Unity/IL2CPP;
+7. dados recebidos e retornados;
+8. relação com outros blocos da função.
+
+## Classificação
+
+**CONFIRMADO:** ID 4 → bloco D.
+
+**DESCONHECIDO:** comportamento funcional exato do bloco D.
+
+**PENDENTE:** análise detalhada do código e das chamadas realizadas
+pelo bloco.
