@@ -1,1 +1,47 @@
 
+# ID 19 → Bloco I
+
+## Identificação
+
+- Função analisada: `FloatingMod_Changes`
+- ID: `19`
+- Bloco de destino: `I`
+- Biblioteca: `libGoldVIP64.so`
+- Tipo: dispatch interno
+
+## Mapa
+
+`ID 19 → bloco I`
+
+## Comportamento
+
+**Ainda não determinado com segurança.**
+
+A análise estática confirma que o ID 19 direciona a execução para o
+bloco interno identificado como `I`.
+
+O destino dentro do dispatcher não é suficiente, sozinho, para
+determinar a funcionalidade de alto nível executada.
+
+## Evidências a analisar
+
+Para identificar o comportamento do bloco I:
+
+1. instruções executadas;
+2. funções chamadas;
+3. argumentos utilizados;
+4. strings referenciadas;
+5. símbolos e importações;
+6. chamadas JNI;
+7. referências ao Unity/IL2CPP;
+8. dados manipulados;
+9. fluxo de retorno.
+
+## Classificação
+
+**CONFIRMADO:** ID 19 → bloco I.
+
+**DESCONHECIDO:** comportamento funcional exato do bloco I.
+
+**PENDENTE:** análise detalhada das instruções e chamadas realizadas
+pelo bloco.
