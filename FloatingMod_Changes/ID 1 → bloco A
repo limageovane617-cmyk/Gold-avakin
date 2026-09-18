@@ -1,1 +1,59 @@
+# ID 2 → Bloco B
 
+## Identificação
+
+- Função analisada: `FloatingMod_Changes`
+- ID: `2`
+- Bloco: `B`
+- Biblioteca: `libGoldVIP64.so`
+- Tipo: dispatch interno / bloco compartilhado
+
+## Mapa de compartilhamento
+
+O bloco B também é alcançado pelos seguintes IDs:
+
+- ID 2
+- IDs 5–12
+- IDs 15–16
+- IDs 21–26
+
+## Observação técnica
+
+A análise estática da função `FloatingMod_Changes` indica que o ID 2
+direciona a execução para o mesmo bloco interno identificado como
+`bloco B`.
+
+Isso significa que vários IDs utilizam o mesmo trecho de código.
+
+## Comportamento
+
+**Ainda não determinado com segurança.**
+
+A existência do bloco B confirma o fluxo de despacho, mas o ID do
+dispatcher, sozinho, não permite determinar qual funcionalidade de
+alto nível está associada ao bloco.
+
+Não atribuir ao bloco funções como moedas, recompensas, XP, missões
+ou outros comportamentos sem evidência adicional.
+
+## Evidências necessárias
+
+Para determinar o comportamento do bloco B, devem ser analisados:
+
+1. chamadas realizadas pelo bloco;
+2. funções nativas chamadas;
+3. referências de strings;
+4. símbolos/importações relacionados;
+5. possíveis chamadas JNI;
+6. relação com métodos/classes do Unity/IL2CPP;
+7. fluxo de retorno e dados manipulados.
+
+## Classificação atual
+
+**CONFIRMADO:** ID 2 → bloco B.
+
+**DESCONHECIDO:** comportamento funcional exato do bloco B.
+
+**PROVÁVEL:** o mesmo comportamento estrutural é reutilizado pelos
+demais IDs que apontam para B, mas isso ainda deve ser confirmado
+individualmente.
