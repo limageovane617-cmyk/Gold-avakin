@@ -1,1 +1,46 @@
+# ID 18 → Bloco H
 
+## Identificação
+
+- Função analisada: `FloatingMod_Changes`
+- ID: `18`
+- Bloco de destino: `H`
+- Biblioteca: `libGoldVIP64.so`
+- Tipo: dispatch interno
+
+## Mapa
+
+`ID 18 → bloco H`
+
+## Comportamento
+
+**Ainda não determinado com segurança.**
+
+A análise estática confirma que o ID 18 direciona a execução para o
+bloco interno identificado como `H`.
+
+O destino do dispatcher, isoladamente, não determina a funcionalidade
+de alto nível executada pelo bloco.
+
+## Evidências a analisar
+
+Para identificar o comportamento do bloco H:
+
+1. instruções executadas;
+2. funções chamadas;
+3. argumentos utilizados;
+4. strings referenciadas;
+5. símbolos e importações;
+6. chamadas JNI;
+7. referências ao Unity/IL2CPP;
+8. dados manipulados;
+9. fluxo de retorno.
+
+## Classificação
+
+**CONFIRMADO:** ID 18 → bloco H.
+
+**DESCONHECIDO:** comportamento funcional exato do bloco H.
+
+**PENDENTE:** análise detalhada das instruções e chamadas realizadas
+pelo bloco.
