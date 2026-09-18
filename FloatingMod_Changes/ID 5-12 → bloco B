@@ -1,1 +1,68 @@
+# IDs 5–12 → Bloco B
 
+## Identificação
+
+- Função analisada: `FloatingMod_Changes`
+- IDs: `5, 6, 7, 8, 9, 10, 11, 12`
+- Bloco de destino: `B`
+- Biblioteca: `libGoldVIP64.so`
+- Tipo: dispatch compartilhado
+
+## Mapa
+
+Os seguintes IDs direcionam a execução para o mesmo bloco interno:
+
+| ID | Destino |
+|---|---|
+| 5 | Bloco B |
+| 6 | Bloco B |
+| 7 | Bloco B |
+| 8 | Bloco B |
+| 9 | Bloco B |
+| 10 | Bloco B |
+| 11 | Bloco B |
+| 12 | Bloco B |
+
+## Relação com outros IDs
+
+O bloco B também recebe:
+
+- ID 2
+- IDs 15–16
+- IDs 21–26
+
+Portanto, o bloco B é compartilhado por vários IDs do dispatcher.
+
+## Comportamento
+
+**Ainda não determinado com segurança.**
+
+O mapa estático confirma que todos os IDs acima convergem para o
+mesmo bloco interno. Isso não significa necessariamente que todos
+tenham exatamente o mesmo comportamento em nível funcional; o
+comportamento pode depender de estado ou de dados utilizados pelo
+código.
+
+## Evidências a analisar
+
+Para determinar o comportamento do bloco B:
+
+1. instruções executadas;
+2. funções chamadas;
+3. argumentos utilizados;
+4. strings referenciadas;
+5. chamadas JNI;
+6. símbolos/importações;
+7. referências ao Unity/IL2CPP;
+8. fluxo de retorno;
+9. estado interno utilizado.
+
+## Classificação
+
+**CONFIRMADO:** IDs 5–12 → bloco B.
+
+**CONFIRMADO:** o bloco B é compartilhado com outros IDs.
+
+**DESCONHECIDO:** funcionalidade exata executada pelo bloco B.
+
+**PENDENTE:** análise detalhada das chamadas e instruções do bloco.
